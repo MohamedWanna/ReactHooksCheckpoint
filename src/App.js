@@ -25,7 +25,7 @@ const handleSearch = (e)=> setSearchValue(e.target.value);
         handleRating={handleRating} 
         handleSearch={handleSearch} 
         />
-        <MovieList movies={movies.filter((el)=>el.title.toLowerCase().includes(searchValue.toLowerCase()) && el.rate>=searchRating)
+        <MovieList movies={movies.filter((el)=>el.title.toLowerCase().includes(searchValue.toLowerCase().trim()) && el.rate>=searchRating)
       }/>
         <AddMovie handleadd={handleadd}  />
       </header>
