@@ -17,7 +17,7 @@ function App() {
 const handleRating = (rate)=> setSearchRating(rate);
 const handleSearch = (e)=> setSearchValue(e.target.value);
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <Search 
         searchValue={searchValue} 
